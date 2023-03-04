@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700;800;900&display=swap");
+@import "./styles/side-bar.css";
+@import "./styles/product-image.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: #eee;
+  font-size: 0.8rem;
+  font-family: "Martel Sans", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+.green {
+  background-color: #09687a;
+}
+.purple {
+  background-color: #6e49ab;
+}
+.brown {
+  background-color: #a66039;
+}
+
+.container {
+  width: 70rem;
+  height: 45rem;
+  display: flex;
+  background-color: #fff;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.product-details {
+  height: inherit;
+  position: relative;
+  /* background-color: red; */
+}
+
+.product-details::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: -15rem;
+  border-bottom: 45rem solid #fff;
+  border-left: 15rem solid transparent;
+  /* background-color: #fff; */
+}
+
+.product-details .app-menu {
+  width: 8.25rem;
+  height: 1.65rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.65rem;
+  font-size: 1.65rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #000; */
+}
+
+.product-details .app-menu .app-icon {
+  color: #000;
+  cursor: pointer;
+}
+
+.product-details .details {
+  width: 28rem;
+  height: 20rem;
+  position: absolute;
+  top: 7rem;
+  left: 3rem;
+}
+.product-details .details .product-name h3 {
+  font-weight: 800;
+  font-size: 1.7rem;
+  line-height: 160%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-top: 0.3rem;
+}
+
+.product-details .details .product-code h3 {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 160.9%;
+  color: #000000;
+  margin-top: 0.5rem;
+}
+.product-details .details .price h1 {
+  font-weight: 900;
+  font-size: 43px;
+  line-height: 160.9%;
+  letter-spacing: -0.04em;
+  color: #3da7ba;
+  margin-top: 0.5rem;
+}
+
+.product-details .details .variants {
+  width: auto;
+  height: auto;
+  /* background-color: #000; */
+}
+.product-details .details .variants h3 {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 160.9%;
+  color: #000000;
+}
+.product-details .details .variants .colors {
+  width: 6rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  /* background-color: #000; */
+}
+.product-details .details .variants .colors .rounded {
+  width: 1rem;
+  height: 1rem;
+}

@@ -1,0 +1,29 @@
+
+.content .product-image {
+    height: inherit;
+    background-color: rgba(7, 143, 167, 0.78);
+    position: relative;
+  }
+  .content .product-image img {
+    width: 30rem;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: 0 -50%;
+    z-index: 1;
+  }
+  
+  .content .product-image h1 {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 95px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: absolute;
+    left: 1.1rem;
+    top: .5rem;
+  }
+  
+  
