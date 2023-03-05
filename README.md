@@ -6,9 +6,23 @@
 
 ## Setup
 ```
-* git clone https://github.com/ferater/figmaToHtml-product-bag.git
-* cd figmaToHtml-product-bag
-* yarn or npm install
-* yarn dev or npm run dev
-*** visit http://localhost:5173
+git clone https://github.com/ferater/figmaToHtml-product-bag.git
 ```
+```
+cd figmaToHtml-product-bag
+```
+```
+yarn or npm install
+```
+```
+yarn dev or npm run dev
+```
+```
+visit http://localhost:5173 
+``` 
+
+
+
+
+
+
