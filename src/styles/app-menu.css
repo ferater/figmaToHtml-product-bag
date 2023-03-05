@@ -1,0 +1,22 @@
+.product-details .app-menu {
+    width: 8.25rem;
+    height: 1.65rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.65rem;
+    font-size: 1.65rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #000; */
+  }
+  
+  .product-details .app-menu .app-icon {
+    color: #000;
+    transition: all .3s ease;
+  }
+  
+  .product-details .app-menu .app-icon:hover {
+    scale: 1.1;
+    color: #3da7ba;
+  }

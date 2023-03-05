@@ -1,0 +1,23 @@
+.product-details .slide-selector {
+    width: 1.5rem;
+    height: 6rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    translate: 0 -50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #000; */
+  }
+  
+  .product-details .slide-selector .selector {
+    width: 1rem;
+    height: 1rem;
+    background: rgb(196, 196, 196);
+  }
+  
+  .product-details .slide-selector .selector.active {
+    height: 3rem;
+    border-radius: .5rem;
+  }
