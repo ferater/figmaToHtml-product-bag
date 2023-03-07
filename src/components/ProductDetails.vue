@@ -22,7 +22,7 @@ import SlideSelector from './SlideSelector.vue';
             <div class="variants">
                 <h3>Colors</h3>
                 <div class="colors">
-                    <div class="rounded color green color-active"></div>
+                    <div class="rounded color blue color-active"></div>
                     <div class="rounded color purple c-pointer"></div>
                     <div class="rounded color brown c-pointer"></div>
                 </div>
