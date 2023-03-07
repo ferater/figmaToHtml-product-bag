@@ -1,7 +1,15 @@
 <script setup>
+import {useColorsStore } from '../stores/ColorStore'
 import { Icon } from "@iconify/vue";
 import AppMenu from './AppMenu.vue';
 import SlideSelector from './SlideSelector.vue';
+
+const colorStore = useColorsStore();
+
+const changeColor = (color) => {
+    activeColor.value = color;
+}
+
 </script>
 <template>
     <div class="product-details">
@@ -22,9 +30,10 @@ import SlideSelector from './SlideSelector.vue';
             <div class="variants">
                 <h3>Colors</h3>
                 <div class="colors">
-                    <div class="rounded color blue color-active"></div>
-                    <div class="rounded color purple c-pointer"></div>
-                    <div class="rounded color brown c-pointer"></div>
+                    <template v-for="color in colorStore.colors" :key="color">
+                        <div class="rounded color" :class="color, { 'color-active': activeColor == color }"
+                            @click="changeColor(color)"></div>
+                    </template>
                 </div>
             </div>
             <div class="quantity">

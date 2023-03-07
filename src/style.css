@@ -27,18 +27,6 @@ body {
   border-radius: 50%;
 }
 
-.blue {
-  background-color: #086374;
-}
-
-.purple {
-  background-color: #6e49ab;
-}
-
-.brown {
-  background-color: #a66039;
-}
-
 .c-pointer {
   cursor: pointer;
 }

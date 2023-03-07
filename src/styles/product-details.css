@@ -1,3 +1,15 @@
+.blue {
+  background-color: #086374;
+}
+
+.purple {
+  background-color: #6e49ab;
+}
+
+.brown {
+  background-color: #a66039;
+}
+
 .product-details {
     height: inherit;
     position: relative;
@@ -64,10 +76,9 @@
   }
   
   .product-details .details .variants .colors {
-    width: 6rem;
+    width: 16rem;
     height: 1.5rem;
     display: flex;
-    justify-content: space-between;
     margin-top: 1rem;
     /* background-color: #000; */
   }
@@ -75,6 +86,9 @@
   .product-details .details .variants .colors .rounded {
     width: 1rem;
     height: 1rem;
+  }
+  .product-details .details .variants .color:not(:first-child) {
+    margin-left: 1rem;
   }
   
   .variants .colors .color-active {
