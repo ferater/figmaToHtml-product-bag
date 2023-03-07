@@ -5,6 +5,7 @@
 @import "./styles/app-menu.css";
 @import "./styles/slide-selector.css";
 @import "./styles/product-details.css";
+@import "./styles/effects.css";
 
 *,
 *::before,
@@ -48,4 +49,5 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
+  overflow: hidden;
 }
