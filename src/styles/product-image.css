@@ -12,18 +12,20 @@
     right: 0;
     translate: 0 -50%;
     z-index: 1;
+    filter: drop-shadow(0 0 3rem #000);
   }
   
-  .content .product-image h1 {
+  .content .product-image .brand-name {
     font-weight: 600;
-    font-size: 52px;
-    line-height: 95px;
+    font-size: 3rem;
+    line-height: 4.7rem;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     position: absolute;
-    left: 1.1rem;
-    top: .5rem;
+    left: 1.5rem;
+    top: 1rem;
+    z-index: 2;
   }
   
   

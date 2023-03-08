@@ -1,16 +1,20 @@
 <script setup>
-import { useProductStore } from "../stores/product";
-const productStore = useProductStore();
+defineProps({
+  brand: String,
+  pPic:String,
+  activeColor: String
+});
+// console.log(p)
 </script>
 <template>
-  <div class="product-image" :class="productStore.activeColor">
-    <h1>michael kors</h1>
+  <div class="product-image" :class="activeColor">
+    <h2 class="brand-name">{{ brand }}</h2>
 
-        <transition name="translate">
+        <transition name="translatex">
           <img
-          :src="`src/assets/img/women_bag_${productStore.activeColor}.png`"
-          :alt="`women_bag_${productStore.activeColor}`"
-          :key="`src/assets/img/women_bag_${productStore.activeColor}.png`"
+          :src="`src/assets/img/${pPic}_${activeColor}.png`"
+          :alt="`${pPic}_${activeColor}`"
+          :key="`src/assets/img/${pPic}_${activeColor}.png`"
         />
         </transition>
 

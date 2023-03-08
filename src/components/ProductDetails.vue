@@ -1,11 +1,16 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 import AppMenu from "./AppMenu.vue";
-import SlideSelector from "./SlideSelector.vue";
-
 import { useProductStore } from "../stores/product";
 const productStore = useProductStore();
-console.log(productStore.colors);
+defineProps({
+  pId:Number,
+  pName: String,
+  pStyle: String,
+  pPrice: String,
+  pColors: Array,
+  activeColor: String,
+});
 </script>
 <template>
   <div class="product-details">
@@ -15,22 +20,22 @@ console.log(productStore.colors);
         <img src="../assets/img/stars.svg" alt="" />
       </div>
       <div class="product-name">
-        <h3>Hope Large Two-Tone Saffiano Leather Satchel</h3>
+        <h3>{{ pName }}</h3>
       </div>
       <div class="product-code">
-        <h3>Style 351GGYx847</h3>
+        <h3>Style {{ pStyle }}</h3>
       </div>
       <div class="price">
-        <h1>$365.65</h1>
+        <h1>${{ pPrice }}</h1>
       </div>
       <div class="variants">
         <h3>Colors</h3>
         <div class="colors">
-          <template v-for="(color,index) in productStore.colors">
+          <template v-for="(color,index) in pColors">
             <div
               class="rounded color"
-              :class="color, {'color-active': productStore.activeColor == color }"
-              @click="productStore.changeActiveColor(color,index)"
+              :class="color, { 'color-active': activeColor == color }"
+              @click="productStore.changeActiveColor(pId,index)"
             ></div>
           </template>
         </div>
@@ -51,6 +56,5 @@ console.log(productStore.colors);
         <button class="cart-btn c-pointer x-scale">add to cart</button>
       </div>
     </div>
-    <SlideSelector />
   </div>
 </template>

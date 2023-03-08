@@ -1,19 +1,36 @@
-.blue {
+/* bag Color section */
+.green {
   background-color: #086374;
 }
-
 .purple {
   background-color: #6e49ab;
 }
-
 .brown {
   background-color: #a66039;
 }
+.lightblue {
+  background-color: #70849c;
+}
+.black {
+  background-color: black;
+}
+.cream {
+  background-color: #d0ab81;
+}
+.blue {
+  background-color: #2f6dd8;
+}
+.red {
+  background-color: #f34f4a;
+}
 
+/*-------------------*/
+
+
+/*----------*/
 .product-details {
     height: inherit;
     position: relative;
-    /* background-color: red; */
   }
   
   .product-details::after {
@@ -25,14 +42,13 @@
     left: -15rem;
     border-bottom: 45rem solid #fff;
     border-left: 15rem solid transparent;
-    /* background-color: #fff; */
   }
   
   .product-details .details {
     width: 28rem;
     height: 20rem;
     position: absolute;
-    top: 7rem;
+    top: 6rem;
     left: 3rem;
   }
   
@@ -65,7 +81,6 @@
   .product-details .details .variants {
     width: auto;
     height: auto;
-    /* background-color: #000; */
   }
   
   .product-details .details .variants h3 {
@@ -139,7 +154,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: 1px solid; */
   }
   
   .product-details .details .favorites h5 {
@@ -163,7 +177,6 @@
     height: 7rem;
     display: flex;
     align-items: center;
-    /* background-color: #09687a; */
   }
   
   

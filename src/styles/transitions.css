@@ -1,0 +1,21 @@
+/* Translate effect */
+.translatex-enter-from{
+    transform: translateX(-100%);
+  }
+  .translatex-enter-to{
+    transform: translateX(0);
+  }
+  .translatex-enter-active{
+    transition: all .3s ease;
+  }
+  .translatex-leave-from{
+    transform: translateX(0);
+  }
+  .translatex-leave-to{
+    transform: translateX(50%);
+    width: .5rem;
+    opacity: 0;
+  }
+  .translatex-leave-active{
+    transition: all .3s ease;
+  }
