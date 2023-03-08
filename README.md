@@ -1,5 +1,6 @@
-![alt text](https://raw.githubusercontent.com/ferater/figmaToHtml-product-bag/main/src/assets/img/secreenshot.png?raw=true)
 ![alt text](https://raw.githubusercontent.com/ferater/figmaToHtml-product-bag/main/src/assets/img/ss.gif?raw=true)
+
+![alt text](https://raw.githubusercontent.com/ferater/figmaToHtml-product-bag/main/src/assets/img/secreenshot.png?raw=true)
 
 # Vue 3 figma to html
 
